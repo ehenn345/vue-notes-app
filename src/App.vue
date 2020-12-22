@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <multiselect v-model="value" :options="options"></multiselect>
     <Toolbar/>
     <NoteContainer/>
   </div>
@@ -7,12 +8,19 @@
 <script>
 import Toolbar from "./components/Toolbar.vue";
 import NoteContainer from "./components/NoteContainer.vue";
+import Multiselect from "vue-multiselect";
 export default {
   components: {
     Toolbar,
     NoteContainer,
+    Multiselect,
   },
-  name: "app",
+  data() {
+    return {
+      value: null,
+      options: ["list", "of", "options"],
+    };
+  },
 };
 </script>
 <style>
