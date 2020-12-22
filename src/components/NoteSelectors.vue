@@ -1,22 +1,20 @@
 <template>
   <div class="note-selectors">
         <NoteSelector1 />
-        <div class="note-selector">
-          <p class="note-selector-title">Second note...</p>
-          <p class="note-selector-timestamp">Timestamp here...</p>
-        </div>
-        <div class="note-selector">
-          <p class="note-selector-title">Third note...</p>
-          <p class="note-selector-timestamp">Timestamp here...</p>
-        </div>
+        <NoteSelector2 />
+        <NoteSelector3 />
       </div>
 </template>
 
 <script>
 import NoteSelector1 from "./NoteSelector1.vue";
+import NoteSelector2 from "./NoteSelector2.vue";
+import NoteSelector3 from "./NoteSelector3.vue";
 export default {
   components: {
     NoteSelector1,
+    NoteSelector2,
+    NoteSelector3,
   },
 };
 </script>
